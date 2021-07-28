@@ -1,0 +1,22 @@
+{
+  "name": "angeldav-test-pageloader",
+  "version": "1.0.0-test",
+  "description": "this package uses angeldav-testpackage and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDav943/test-pageLoader.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "AngelDav943",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelDav943/test-pageLoader/issues"
+  },
+  "homepage": "https://github.com/AngelDav943/test-pageLoader#readme"
+}
