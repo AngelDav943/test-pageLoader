@@ -1,6 +1,6 @@
 {
   "name": "angeldav-test-pageloader",
-  "version": "1.0.0-test",
+  "version": "1.0.1-test",
   "description": "this package uses angeldav-testpackage and express",
   "main": "index.js",
   "scripts": {

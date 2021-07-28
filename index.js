@@ -55,4 +55,4 @@ class loader {
     }
 }
 
-module.exports = loader;
+module.exports = new loader;
