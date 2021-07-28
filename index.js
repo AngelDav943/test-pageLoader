@@ -1,5 +1,5 @@
 const fs = require('fs');
-const page = require('angeldav-testpackage');
+let page = require('angeldav-testpackage');
 
 module.exports = function(testpage,config) {
     if (testpage != null) page = testpage
