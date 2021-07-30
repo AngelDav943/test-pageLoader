@@ -14,6 +14,8 @@ module.exports = function(testpage,config) {
         
         if (fs.existsSync(`${config.path}${urlpath.toLowerCase()}.html`)) {
             filepath = `${config.path}${urlpath.toLowerCase()}.html`
+        } else if (fs.existsSync(`${config.path}${urlpath.toLowerCase()}/index.html`)) {
+            filepath = `${config.path}${urlpath.toLowerCase()}/index.html`
         }
         
         let title = [url.length - 1];
