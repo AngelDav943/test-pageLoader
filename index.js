@@ -2,8 +2,7 @@ const fs = require('fs');
 let page = require('angeldav-testpackage');
 
 module.exports = function(testpage,config) {
-    if (testpage != null) page = testpage
-
+    if (testpage != null) page = testpage;
 
     config.app.get('*', (req, res) => {
         let url = req.path.substring(1).split('/');
@@ -16,8 +15,6 @@ module.exports = function(testpage,config) {
         if (fs.existsSync(`${config.path}${urlpath.toLowerCase()}.html`)) {
             filepath = `${config.path}${urlpath.toLowerCase()}.html`
         }
-
-        console.log(url)
         
         let title = [url.length - 1];
         let scriptpath = `${config.path}${urlpath.toLowerCase()}.js`;
