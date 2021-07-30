@@ -8,17 +8,17 @@ module.exports = function(testpage,config) {
     config.app.get('*', (req, res) => {
         let url = req.path.substring(1).split('/');
         let urlpath = req.url;
-        urlpath = urlpath.split('?')[0]
-        
-        let baseurl = url[0];
+        urlpath = urlpath.split('?')[0];
         
         let filepath = `${urlpath.toLowerCase()}/index`;
-
-        if ( url[url.length-1] != "index" && fs.existsSync(`${config.path}${urlpath.toLowerCase()}.html`)) {
+        if (url[0] == "") urlpath = "/index"
+        
+        if (fs.existsSync(`${config.path}${urlpath.toLowerCase()}.html`)) {
             filepath = `${config.path}${urlpath.toLowerCase()}.html`
         }
+
+        console.log(url)
         
-        let paths = filepath.split('/');
         let title = [url.length - 1];
         let scriptpath = `${config.path}${urlpath.toLowerCase()}.js`;
         let scriptloaded = false
