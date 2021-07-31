@@ -23,7 +23,7 @@ module.exports = function(testpage,config) {
         let scriptloaded = false
         
         if (fs.existsSync(scriptpath)) {
-            var dirpath = `${config.path}${urlpath.toLowerCase().substring(0, url.path - url[url.length-1].length)}`
+            var dirpath = `${config.path}${urlpath.toLowerCase().substring(0, urlpath.length - url[url.length-1].length)}`
             eval(fs.readFileSync(scriptpath).toString())
             scriptloaded = true
         } else {
