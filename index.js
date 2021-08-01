@@ -18,7 +18,7 @@ module.exports = function(testpage,config) {
             filepath = `${config.path}${urlpath.toLowerCase()}/index.html`
         }
         
-        let title = [url.length - 1];
+        let title = url[url.length - 1];
         let scriptpath = `${config.path}${urlpath.toLowerCase()}.js`;
         let scriptloaded = false
         
