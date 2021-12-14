@@ -32,11 +32,13 @@ module.exports = async function(testpage,config) {
             try {
                 eval(fs.readFileSync(scriptpath).toString())
                 scriptloaded = true
+                return
             } catch(err) {
                 try {
                     if (urlpath.toLowerCase() != "/" && url[0].toLowerCase() != "assets") {
                         eval(fs.readFileSync(`${config.path}/${url[0].toLowerCase()}/notfound.js`).toString())
                         scriptloaded = true
+                        return
                     }
                 } catch(err) {
     
