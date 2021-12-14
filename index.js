@@ -1,7 +1,7 @@
 const fs = require('fs');
 let page = require('angeldav-testpackage');
 
-module.exports = function(testpage,config) {
+module.exports = async function(testpage,config) {
     if (testpage != null) page = testpage;
 
     config.app.get('*', (req, res) => {
