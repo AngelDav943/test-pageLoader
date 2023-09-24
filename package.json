@@ -11,7 +11,8 @@
     "url": "git+https://github.com/AngelDav943/test-pageLoader.git"
   },
   "keywords": [
-    "test"
+    "test",
+    "page loader"
   ],
   "author": "AngelDav943",
   "license": "ISC",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/AngelDav943/test-pageLoader#readme",
   "dependencies": {
-    "angeldav-testpackage": "^1.2.4"
+    "angeldav-testpackage": "^1.2.4",
+    "fs": "^0.0.1-security"
   }
 }
