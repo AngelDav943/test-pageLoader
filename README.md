@@ -85,15 +85,16 @@ Example of ``template.html``
 
 </html>
 ```
+Example of index page
 
-Example of ``view/index.html``
+``view/index.html``
 ```html
 <p>Hello world!</p>
 ```
 
 ![screenshot](https://github.com/AngelDav943/test-pageLoader/assets/35638964/99e25d26-948d-4b7e-959c-2c6f505c79e3)
 
-If you need more pages you can just do like this
+Example of static page
 
 ``view/test.html``
 ```html
@@ -103,7 +104,7 @@ If you need more pages you can just do like this
 
 ![screenshot1](https://github.com/AngelDav943/test-pageLoader/assets/35638964/87726d8c-7f87-4b61-8357-1424b118005a)
 
-If you need to run some code in a page you can do like this
+Example of dynamic page
 
 ``view/codetest.js``
 ```javascript
