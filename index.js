@@ -53,4 +53,19 @@ module.exports = async function(testpage,config) {
             "templatedir":filepath
         }).load()
     });
+
+    config.app.use(function(error, req, res, next) {
+        new page.loader({
+            "res":res,
+            "req":req,
+            "title":"ERROR 500",
+            "templatedir":page.default.notfound,
+            "other":{
+                "errortitle": `Internal Server Error`,
+                "errorcode": `500`,
+                "errormessage": error
+            }
+        }).load()
+        console.error(error);
+    });
 }
