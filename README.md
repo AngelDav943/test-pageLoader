@@ -132,3 +132,30 @@ new page.loader({
 ```
 
 ![screenshot](https://github.com/AngelDav943/test-pageLoader/assets/35638964/b4f58788-4bc1-4d14-97c3-a83d6661bc02)
+
+## page.default.preload
+``angeldav-testpackage`` stuff.
+
+``page.default.preload`` sets javascript code to run before fully loading a page, it lets you modify the template page before any more changes with the ``base`` variable.
+
+Useful when adding logged in username, custom themes and other stuff.
+
+### example usage of preload
+``index.js``
+```javascript 
+const page = require('angeldav_testpackage');
+page.preload = `${__dirname}/default_preload.js`
+```
+``default_preload.js``
+```javascript 
+function getCookie(cookie, name) {
+    if (cookie.includes(name+"=") == false || name == "") return ""
+    var result = cookie.slice(cookie.indexOf(name))
+    if (result.includes(";")) result = result.slice(0, result.indexOf(";"))
+    result = result.split("=")
+    return result[result.length-1]
+}
+
+let theme = getCookie(req.headers.cookie, "theme")
+if (theme == "special") base = fs.readFileSync(`${__dirname}/../../templates/special.html`).toString()
+```
