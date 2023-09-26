@@ -1,10 +1,10 @@
 # test-pageLoader package
 This is a small package i made that handles all express's app.get requests, it uses angeldav-testpackage and expressjs.
 
-Initalization variables for ``angeldav-testpackage``
+Initalization variables for ``angeldav-loaderhtml``
 ```javascript
-// import angeldav-testpackage
-const page = require('angeldav-testpackage');
+// import angeldav-loaderhtml
+const page = require('angeldav-loaderhtml');
 
 // set url of the website to replace __rooturl in the html files to the chosen url
 page.url = "localhost:1234" 
@@ -54,7 +54,7 @@ Example of ``index.js``
 ```javascript
 const express = require('express');
 const app = express();
-const page = require('angeldav-testpackage');
+const page = require('angeldav-loaderhtml');
 
 page.url = "http://localhost:3000"
 page.default.template = `${__dirname}/template.html`
