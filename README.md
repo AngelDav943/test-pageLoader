@@ -143,7 +143,7 @@ Useful when adding logged in username, custom themes and other stuff.
 ### example usage of preload
 ``index.js``
 ```javascript 
-const page = require('angeldav_testpackage');
+const page = require('angeldav-loaderhtml');
 page.preload = `${__dirname}/default_preload.js`
 ```
 ``default_preload.js``
