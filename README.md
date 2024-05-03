@@ -10,7 +10,7 @@ const page = require('angeldav-loaderhtml');
 page.url = "localhost:1234" 
 
 // Page to show when a page is not found
-page.default.notfound:`${__dirname}/notfound.html` 
+page.default.notfound = `${__dirname}/notfound.html` 
 
 // Base template for the pages
 page.default.template = `${__dirname}/template.html` 
