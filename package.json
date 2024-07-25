@@ -1,7 +1,7 @@
 {
-  "name": "angeldav-test-pageloader",
-  "version": "1.0.7-d",
-  "description": "this package uses angeldav-testpackage and express",
+  "name": "angeldav-pageloader",
+  "version": "1.0.8",
+  "description": "this package uses angeldav-loaderhtml and express",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
