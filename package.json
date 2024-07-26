@@ -1,6 +1,6 @@
 {
   "name": "angeldav-pageloader",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "this package uses angeldav-loaderhtml and express",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/AngelDav943/test-pageLoader#readme",
   "dependencies": {
     "angeldav-loaderhtml": "^1.2.4",
+    "body-parser": "^1.20.2",
     "fs": "^0.0.1-security"
-  }
+  },
+  "devDependencies": {}
 }

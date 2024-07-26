@@ -1,5 +1,5 @@
 # pageLoader package
-This is a small package i made that handles all express's app.get requests, it uses angeldav-loaderhtml and expressjs.
+This is a small package i made that handles all express's app.get requests, it uses angeldav-loaderhtml, expressjs and body-parser.
 
 Initalization variables for ``angeldav-loaderhtml``
 ```javascript
